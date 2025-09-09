@@ -1,4 +1,4 @@
-﻿namespace Lab1
+namespace Lab1
 {
     public class Green
     {
@@ -6,9 +6,19 @@
         {
             bool answer = false;
 
-            // code here
+            d = 6.2;
 
-            // end
+            double m = Math.Abs(d);
+
+            if (m >= 1)
+            {
+                answer = true;
+            }
+            else
+            {
+               answer = false;
+            }
+
 
             return answer;
         }
@@ -16,9 +26,14 @@
         {
             bool answer = false;
 
-            // code here
-
-            // end
+            d = 5.6;
+            f = 2.3;
+            double b = (d + f) / 2;
+            if (b > 0)
+            {
+                answer = true;
+            }
+            
 
             return answer;
         }
@@ -26,9 +41,15 @@
         {
             bool answer = false;
 
-            // code here
-
-            // end
+            a = 5;
+            b = 2;
+            double a1 = Math.Abs(a);
+            double b1 = Math.Abs(b);
+            double d = (a + b) / 2;
+            if ((a + b) > d)
+            {
+                answer = true;
+            }
 
             return answer;
         }
@@ -36,19 +57,39 @@
         {
             int answer = 0;
 
-            // code here
+            a = 2;
+            b = 5;
+            c = 54;
+            if (a > b && a > c)
+            {
+                answer = a;
+            }
+            else if (b > a && b > c)
+            {
+                answer = b;
+            }
+            else
+            {
+                answer = c;
+            }
 
-            // end
 
             return answer;
         }
         public double Task5(double x)
         {
             double answer = 0;
-
-            // code here
-
-            // end
+            x = 0;
+            double x1 = Math.Abs(x);
+            double x2 = Math.Pow(x, 2);
+            if (x1 > 0)
+            {
+                answer = 0;
+            }
+            else if (x1 <= 0)
+            {
+                answer = x2 - 1;
+            }
 
             return answer;
         }
